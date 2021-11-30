@@ -1,10 +1,17 @@
 #include<iostream>
 using namespace std;
  int main(){
-     for (int i=0;i<=5;++i){
-         if(i==3){
-         break;
-         }
-        cout<<i<<endl;
-     }
+     int Sum=0;
+     int number;
+    while (true)
+    {
+    cout<<"Enter a number:";
+    cin >>number;
+    if(number<0){
+        break; // break statement to break the while loop which is true
+    }
+     Sum +=number;
+    }
+    cout<<"Sum total of all positive number is:"<<Sum<<endl;
+
  }
