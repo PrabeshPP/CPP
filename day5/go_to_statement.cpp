@@ -8,17 +8,24 @@ int main(){
     cin>>n;
 
 
-    for (int i=1;i<=n;++i){
+    for ( i;i<=n;++i){
+
         cout<<"Enter the number:";
         cin>>num;
         if(num<0.0){
-            goto jump;
+            goto jump; /* goto statement which can be done using break,continue statement
+                            we should not use goto statement as much as possible ,since it makes the program 
+                            more complex and tangled
+                                */
         }
         sum +=num;
+       
     }
 
     jump:
-        average=sum/i;
+        cout<<i<<endl;
+        cout<<sum<<endl;
+        average=sum/(i);
         cout<<"the average of the total number is:"<<average;
 
 }
