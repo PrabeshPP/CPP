@@ -16,13 +16,14 @@ void prime();
          if(number%i==0){
              flag=1;
              break;
-
-         }
-         if(flag==1){
+             }
+         
+        
+     }
+ if(flag==1){
              cout<<"The entered number is not prime";
-         }else{
+         }
+         else{
              cout<<"The entered number is prime";
          }
-     }
-
  }
