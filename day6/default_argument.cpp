@@ -7,7 +7,7 @@ int main(){
     default_function();// default argument is passed and print
     default_function(20);//20 is passed as a first argument and the b would have default argument
     default_function(20,40.2);// 20 & 40.2 is passed as first and second argument respectively 
-    default_function(3.45); //since we have to pass a new 
+    default_function(3.45); //3.45 as passed as 3 as first parameter ,as only one value is passed to the function
 
 }
 
