@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+
+
 int main(){
     int first_array[]={1,2,3,4,5};
     //arrayType arrayname[arraySize]//
@@ -16,8 +18,5 @@ int main(){
         cout<<first_array[i]<<" ";
     }
 
-
-
-
-
 }
+
