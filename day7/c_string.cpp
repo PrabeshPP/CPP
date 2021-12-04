@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// file has been renamed
 int main(){
     // C-string
     char str[]="C++"; //the string would be terminated by a null character(\0)
