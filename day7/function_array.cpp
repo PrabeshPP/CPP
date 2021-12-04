@@ -32,5 +32,6 @@ display(marks);
 int marks1[2][3]={{1,2,3},{4,5,6}};
 display1(marks1);
 
+// returning the array from function is also possible.will learn that in pointers.
 
 }
