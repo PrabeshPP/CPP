@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void display(char*);
+void display(char*); // function prototype is used
 void display(string);
 
 // string object
@@ -13,7 +13,7 @@ int main(){
     cout<<"Enter the char string :";
     cin.get(str1,100); 
     cout<<"\n";
-    display(str1);
+    display(str1);// function overloading is used 
     display(str);
    
 
