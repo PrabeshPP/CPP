@@ -41,6 +41,6 @@ int  main(){
     cout<<"\n";
     double average=CalculateAverage1(s1,s2);
     cout<<"The average of the two marks is "<<average;
-    createStudent();
+   
 
 }
