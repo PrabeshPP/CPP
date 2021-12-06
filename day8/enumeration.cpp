@@ -12,7 +12,9 @@ enum Days{
 int main(){
 Days day; // declaring enum variable
 day=Thursday;
-cout<<day;
+if(day==Thursday){
+    cout<<"It's thursday";
+}
 
     
 }
