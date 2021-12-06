@@ -13,10 +13,19 @@ class Wall{
 
         }
 
-        double calculateArea(){
+     
+    Wall(Wall &obj){ // Copying the constructor
+        length=obj.length;
+        breadth=obj.breadth;
+    }
+      
+    
+ double calculateArea(){
         return length*breadth;
         }
 };
+
+
 
 int main(){
     double l,b;
@@ -28,8 +37,10 @@ int main(){
     cin>>b;
    
     Wall wall1(l,b);
+    Wall wall12=wall1;
     cout<<"\n";
-    cout<<"The area of the wall is "<<wall1.calculateArea();
+    cout<<"The area of the wall 1 is "<<wall1.calculateArea()<<endl;
+    cout<<"The area of wall 2 is "<<wall12.calculateArea();
 
 
 
