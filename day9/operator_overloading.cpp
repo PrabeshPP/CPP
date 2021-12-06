@@ -3,8 +3,6 @@ using namespace std;
 
 
 // we can use operator overloading with data types like char,string,int,float //
-// Overload ++ when used as prefix and postfix
-
 class Count{
     private:
     int value;
@@ -16,7 +14,7 @@ class Count{
         ++value;
     }
 
-    void operator ++(int){
+    void operator ++(int){ // ++"int " is use inorder to to use the unary ++ of postfic in overloading //
         value++;
     }
 
@@ -27,5 +25,10 @@ class Count{
 };
 
 int main(){
-    
+    Count count1;
+    ++count1;
+    count1.display();
+    cout<<"\n";
+    count1++;
+    count1.display();
 }
