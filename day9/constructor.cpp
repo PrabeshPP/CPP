@@ -7,7 +7,7 @@ class Wall{
         double length;
         double breadth;
     public:
-        Wall(double len,double bred    ){  // constructor of the class "Area"
+        Wall(double len,double bred    ){  // constructor of the class "Wall"
         length=len;
         breadth=bred;
 
