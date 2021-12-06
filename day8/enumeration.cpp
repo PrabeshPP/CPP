@@ -10,7 +10,7 @@ enum Days{
     Saturday
 };
 int main(){
-Days day;
+Days day; // declaring enum variable
 day=Thursday;
 cout<<day;
 
