@@ -18,12 +18,12 @@ Student createStudents(){
     cout<<"Mark1 :"<<student.marks1<<endl;
     cout<<"Mark2 :"<<student.marks2;
 
-    return student;
+    return student; // returns object of Student class
 
 }
 
 int main(){
     Student student1;
-student1=createStudents();
+student1=createStudents(); //store an object of the Student class
 
 }
