@@ -8,11 +8,11 @@ int main(){
   cout<<"The address of the variable1 is "<<*pointVar<<endl;
     int var2=20;
     pointVar=&var2;
-    cout<<"The address of the variable2 is "<<*pointVar<<endl;
+    cout<<"The value of the variable2 is "<<*pointVar<<endl;
 
     int var3=40;
     pointVar=&var3;
-   cout<<"The address of the variable3 is "<<*pointVar<<endl;
+   cout<<"The value of the variable3 is "<<*pointVar<<endl;
 
    *pointVar=2; //changing the value of var3 using the pointer
    cout<<"The new value of the variable 3 is "<<var3<<endl; //var3 will print new value
