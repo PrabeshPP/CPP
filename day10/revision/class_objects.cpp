@@ -13,7 +13,7 @@ Employee(int id1,string name1,double age1,double salary1){
     name=name1;
     age=age1;
     salary=salary1;
-    }
+}
 
 void display(){
     cout<<"The name of the Emplyoee with id no. "<<id<<" is " <<name<<endl;;
