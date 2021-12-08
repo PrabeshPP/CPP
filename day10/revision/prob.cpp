@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+// codeforce problem
 int main(){
     string str1;
     string newStr;
