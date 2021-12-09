@@ -1,57 +1,62 @@
 #include <iostream>
 using namespace std;
-
-class Animal{
-public:
-string color;
-protected:
-string type;
-
+class Fruit{
+    private:
+    string name;
+    protected:
+    string type;
     public:
-    void eat(){
-        cout<<"I can eat!"<<endl;
-    }
-
-    void sleep(){
-        cout<<"I can sleep!"<<endl;
-    }
-
-    void setColor(string clr){
-        color=clr;
+    void setName(string str){
+        name=str;
+    
 
     }
 
-    string getClr(){
-        return color;
+//getter for the variable name
+    string getName(){
+        return name;
     }
+
+void taste(){
+    cout<<"I taste sweeter!";
+}
+    void famous(){
+        cout<<"I am not too famous";
+    }
+
+
+
+
 };
-
-class Dog:public Animal{
-    public:
-    void bark(){
-        cout<<"I can Bark!"<<endl;
-    }
-
-    void setType(string ty){
+class Kiwi:public Fruit{
+public:
+    void setFruitType(string ty){
         type=ty;
-    }
-
-    void displayInfo(string c){
-        cout<<"I am  a "<<type<<endl;
-        cout<<"My color is "<<c<<endl;
 
 
     }
+
+    void display(string n){
+        cout<<"I am "<<n<<" ,and I belongs to "<<type<<""<<endl;
+
+
+    }
+
+    
 };
 
 int main(){
-    Dog dog;
-    dog.eat();
-    dog.sleep();
-    dog.bark();
-    dog.setColor("red");
-    dog.setType("Mamal");
-    dog.displayInfo(dog.getClr());
+    string fruitName,type;
 
+    cout<<"Enter the  fruit name :";
+    cin>>fruitName;
+    cout<<"Enter the fruit type :";
+    cin>>type;
+    Kiwi kiwi;
+    kiwi.setName(fruitName);
+    kiwi.taste();
+    kiwi.famous();
+    kiwi.setFruitType(type);
+    kiwi.display(kiwi.getName());
 
 }
