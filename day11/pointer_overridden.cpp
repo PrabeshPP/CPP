@@ -21,7 +21,7 @@ class DerivedClass:public BaseClass{
 int main(){
     DerivedClass  derivedclass;
     // pointer of the base type that points to derivedclass
-    BaseClass* ptr=&derivedclass;
+    BaseClass* ptr=&derivedclass; //eventhough the pointer points to derived class,it is actually type of Base Class
     ptr->output();
 
 }
