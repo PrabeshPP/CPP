@@ -2,7 +2,7 @@
 #include<numeric>
 using namespace std;
 
-
+// solution to find how many questions can be solved by three people
 void problem(){
     int n;
     cin>>n;
