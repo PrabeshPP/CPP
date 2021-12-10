@@ -8,13 +8,14 @@ class BaseClass20{
     public:
     void print(){
         cout<<"Base Class Function!"<<endl;
-        cout<<"Successfully override base class function"<<endl;
+        
     }
 };
 class DerivedClass:public BaseClass20{
     public:
     void print(){
         cout<<"Derived Class Function!"<<endl;
+        cout<<"Successfully override base class function"<<endl;
 
     }
 };
@@ -22,7 +23,9 @@ class DerivedClass:public BaseClass20{
 
 int main(){
     DerivedClass derivedclass;
-    derivedclass.print();
+    derivedclass.print(); //when print() function is called ,the derived print() function is called instead of base class print() function
+    // inorder to call the function of base class ,we have to call base class object
+    
 
 
 }
