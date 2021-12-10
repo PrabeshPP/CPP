@@ -16,6 +16,7 @@ class DerivedClass:public BaseClass20{
     void print(){
         cout<<"Derived Class Function!"<<endl;
         cout<<"Successfully override base class function"<<endl;
+        BaseClass20::print(); //calling overridden funtion in derived class
 
     }
 };
