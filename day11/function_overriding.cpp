@@ -25,7 +25,10 @@ int main(){
     DerivedClass derivedclass;
     derivedclass.print(); //when print() function is called ,the derived print() function is called instead of base class print() function
     // inorder to call the function of base class ,we have to call base class object
-    
+    BaseClass20 baseclass20;
+
+    // it will eradicate funtion overriding
+    baseclass20.print();// it will print base class print() function istead of derived class print() function
 
 
 }
