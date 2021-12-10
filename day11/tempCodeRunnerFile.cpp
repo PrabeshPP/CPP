@@ -1,0 +1,6 @@
+class PrivateDerivedclass:private Base{
+
+
+
+
+// };
