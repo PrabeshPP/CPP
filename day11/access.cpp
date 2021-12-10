@@ -28,7 +28,7 @@ public:
     }
 };
 
-//c++ demonstrations of working protected class
+//c++ demonstrations of working with protected class
 class ProtectedDerivedclass:protected BaseClass{
     public:
     int getX(){
@@ -43,12 +43,23 @@ class ProtectedDerivedclass:protected BaseClass{
 
 };
 
-// class PrivateDerivedclass:private Base{
+
+//C++ demonstrations of working with private base class
+class PrivateDerivedclass:private BaseClass{
+    public:
+
+    int getx11(){
+        return x;
+    }
+
+    int getz12(){
+        return z;
+    }
 
 
 
 
-// };
+};
 
 
 
@@ -57,6 +68,7 @@ class ProtectedDerivedclass:protected BaseClass{
 int main(){
     PublicDerivedClass publicderivedclass;
     ProtectedDerivedclass protectedderivedclass;
+    PrivateDerivedclass privatederivedclass;
 
  cout<<"Private ="<<publicderivedclass.gety()<<endl;
  cout<<"Public ="<<publicderivedclass.x<<endl;
@@ -64,8 +76,12 @@ int main(){
 
 // printing the value using protected inherited derived class
 
-cout<<"Private varibale can not be accessed!"<<endl;
+cout<<"Private varibale can not be access!"<<endl;
 cout<<"Protected ="<<protectedderivedclass.getZ1()<<endl;
 cout<<"Public ="<<protectedderivedclass.getX()<<endl;
 
+//printing the value using private ingeriteed derived class
+cout<<"Private variable can not be access!"<<endl;
+cout<<"Protected ="<<privatederivedclass.getz12()<<endl;
+cout<<"Public ="<<privatederivedclass.getx11()<<endl;
 }
