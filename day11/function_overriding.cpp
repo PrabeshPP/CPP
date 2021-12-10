@@ -29,6 +29,8 @@ int main(){
 
     // it will eradicate funtion overriding
     baseclass20.print();// it will print base class print() function istead of derived class print() function
-
+    
+    //accessing the base class function using scope resolution ::
+    derivedclass.BaseClass20::print();
 
 }
