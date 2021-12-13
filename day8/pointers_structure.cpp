@@ -8,6 +8,7 @@ float  inch;
 };
 
 int main(){
+    //day 11 revised pointer 
     Distance *ptr,d;
     ptr=&d;
     cout<<"Enter feet";

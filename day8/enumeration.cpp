@@ -16,5 +16,5 @@ if(day==Thursday){
     cout<<"It's thursday";
 }
 
-    
+    //day11 revised
 }
