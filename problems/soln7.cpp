@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstdlib>
 using namespace std;
+//has to made some changes
 
 void BeautifulMatrix(){
 int arr[5][5];
