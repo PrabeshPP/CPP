@@ -19,8 +19,8 @@ for (int i=0;i<5;++i){
         }
     }
 }
-int a1=abs(3-a);
-int b1=abs(3-b);
+int a1=abs(2-a);
+int b1=abs(2-b);
 
 int totalMove=a1+b1;
 
