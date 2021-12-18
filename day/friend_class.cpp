@@ -6,7 +6,7 @@ class ClassA{
     private:
     int num1;
     int num2;
-    friend class ClassB;
+    friend class ClassB; //ClassB can access all the properties of ClassA ,since it is the friend function of ClassA
 
 public:
     ClassA():num1(2),num2(5){}
