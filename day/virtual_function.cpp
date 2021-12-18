@@ -3,7 +3,7 @@ using namespace std;
 
 class BaseClass{
 public:
-void print(){
+virtual void print(){ // using the virtual keyword would make this function overridden
     cout<<"Base Class"<<endl;
 }
 };
