@@ -11,10 +11,16 @@ class BaseClass{
 
 class DerivedClass:public BaseClass{
     public:
-        void print() override{
-            cout<<"Derived Class"<<endl;
-        }
+        // void print() override{
+        //     cout<<"Derived Class"<<endl;
+        // }
+
+        void print() override;
 };
+
+void DerivedClass::print(){ //if we want to use prototype function in Derived Class
+    cout<<"Derived Class"<<endl;
+}
 
 int main(){
 DerivedClass derivedclass;
