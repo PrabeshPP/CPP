@@ -41,7 +41,7 @@ void Print(Animal *animal){
 int main(){
    
     Animal *animal1=new Animal();
-    Dog* dog=new Dog();
+    Dog* dog=new Dog(); // new also create instance address of the Class
     Cat* cat=new Cat();
     Print(animal1);
     Print(dog);
