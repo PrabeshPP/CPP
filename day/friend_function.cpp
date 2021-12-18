@@ -19,7 +19,7 @@ class ClassB{
         ClassB():numB(20){}
 };
 
-int add(ClassA a,ClassB b){
+int add(ClassA a,ClassB b){ // friend function to add two numbers
     int sum;
     sum=a.numA+b.numB;
 
