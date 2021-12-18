@@ -18,7 +18,7 @@ class DerivedClass:public BaseClass{
 int main(){
     DerivedClass derived;
     BaseClass *ptr=&derived;
-    ptr->print();
+    ptr->print(); // calls Print() function of deriived class
     
 
 
