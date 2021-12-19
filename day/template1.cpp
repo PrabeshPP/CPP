@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+
+//class template
 template<class T>
 class Calculator{
     private:
