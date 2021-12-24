@@ -35,7 +35,7 @@ return end;
 int main(){
     int arr[]={2,3,5,9,14,16,17,18};
     int size=sizeof(arr)/sizeof(arr[0]);
-    int ret=Ceiling(arr,6,size);
+    int ret=Ceiling(arr,19,size);
     cout<<ret;
  
 }
