@@ -7,7 +7,7 @@ int start=0;
 int end=size;
 int mid=(start+end)/2;
 while(start<=end){
-    if(target>=arr[mid]){
+    if(target==arr[mid]){
         return mid;
 
     }else{
@@ -23,7 +23,7 @@ while(start<=end){
     
 
 }
-return start;
+return start-1;
 
 
     
@@ -33,9 +33,9 @@ return start;
 
 
 int main(){
-    int arr[]={2,3,5,9,14,16,18};
+    int arr[]={2,3,5,9,14,16,17,18};
     int size=sizeof(arr)/sizeof(arr[0]);
-    int ret=Ceiling(arr,15,size);
+    int ret=Ceiling(arr,6,size);
     cout<<ret;
  
 }
