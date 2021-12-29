@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// LinearSearch Algorithm
+// LinearSearch Algorithm.
 class LinearSearch{
     private:
         int length;
