@@ -33,8 +33,4 @@ int main(){
     int len=sizeof(arr)/sizeof(arr[0]);
     BubbleStack bubbleStack=BubbleStack(len);
     bubbleStack.Sort(arr);
-    
-
-
-
 }
