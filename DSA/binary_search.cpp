@@ -1,29 +1,33 @@
 #include<iostream>
 using namespace std;
 
+
+//Implementation of BinarySearch Algorithm
 class BinarySearch{
     private:
         int len;
     public:
-        BinarySearch(int len){
-            len=len;
+        BinarySearch(int _len){
+            len=_len;
         }
+    
 
     int search(int arr[],int guessNum){
         int start,mid,end;
         start=0;
         end=len-1;
         mid=(start+end)/2;
+        
+      
         while(start<=end){
             if(arr[mid]==guessNum){
                 return mid;
-            }else if(arr[mid]>guessNum){
+            }else if(guessNum<arr[mid]){
                 end=mid-1;
                 mid=(start+end)/2;
-
-            }else if(arr[mid]<guessNum){
+            }else{
                 start=mid+1;
-                mid=(start+mid)/2;
+                mid=(start+end)/2;            
             }
         }
         return -1;
@@ -40,11 +44,13 @@ int main(){
     cin>>guessNumber;
     BinarySearch binarysearch=BinarySearch(length);
     int point=binarysearch.search(arr,guessNumber);
+  
+   
     if(point==-1){
         cout<<"There is no such value "<<endl;
 
     }else{
-        cout<<"Your searched number is at "<<point<<endl;
+        cout<<"Your searched number is at "<<point<<"th position"<<endl;
     }
 
 
