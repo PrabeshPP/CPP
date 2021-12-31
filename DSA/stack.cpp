@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Incomplete
 //In stack,the elements that is enter at last pops first
 
 int size=0;
